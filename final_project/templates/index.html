@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <body>
+        <form method="get">
+            Ваш запрос: <input type="text" name="query" required></input><br>
+			   <p>
+			   Выберите метод поиска:<br>
+			   <select size="1" name="method" required>
+				<option value="TF-IDF">TfIdf</option>
+				<option value="BM25">BM25</option>
+				<option value="word2vec_mean_vec">Classic w2v</option>
+				<option value="word2vec_matrix">Experimental w2v</option>
+			   </select></p>
+            <button type="submit">Искать</button>
+        </form>
+        {% for ans in answer %}
+            <p>Номер связки: {{ ans[0] }}<br>
+			Текст ответа: {{ ans[1][:300] }}...</p>
+        {% endfor %}
+    </body>
+</html>

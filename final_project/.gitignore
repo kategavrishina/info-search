@@ -1,0 +1,5 @@
+araneum_none_fasttextcbow_300_5_2018.model
+araneum_none_fasttextcbow_300_5_2018.model.vectors.npy
+araneum_none_fasttextcbow_300_5_2018.model.vectors_ngrams.npy
+araneum_none_fasttextcbow_300_5_2018.model.vectors_vocab.npy
+venv
